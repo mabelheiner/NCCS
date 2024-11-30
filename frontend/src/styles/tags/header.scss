@@ -1,0 +1,11 @@
+//styles within the <header> tag
+header img {
+    max-height: 5em;
+}
+
+header {
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+}

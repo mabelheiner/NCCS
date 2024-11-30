@@ -1,0 +1,15 @@
+//bind all the files together
+
+//base of all pages
+@use './root.scss';
+@use './variable.scss';
+@use './format.scss';
+
+//html tags across all pages
+@use './tags/nav.scss';
+@use './tags/form.scss';
+@use './tags/header.scss';
+@use './tags/button.scss';
+
+//page specific
+@use './pages/home.scss'

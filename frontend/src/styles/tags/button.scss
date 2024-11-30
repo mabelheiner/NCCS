@@ -1,0 +1,7 @@
+//styles applying to the <button> tag
+@use '../variable.scss' as vars;
+
+button {
+    background-color: vars.$dark-blue;
+    color: white;
+}

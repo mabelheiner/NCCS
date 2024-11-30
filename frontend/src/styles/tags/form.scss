@@ -1,0 +1,21 @@
+//styles for form and items within the <form> tag
+form {
+    max-width: 40%;
+
+    h2 {
+        margin-bottom: 0;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        font-size: small;
+    }
+
+    input {
+        margin-bottom: 1em;
+    }
+}

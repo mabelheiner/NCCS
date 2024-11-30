@@ -1,0 +1,91 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.display-none {
+  display: none;
+}
+
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0em 1em;
+}
+nav ul li:hover {
+  text-decoration: underline;
+}
+
+nav ul div {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: block;
+  background-color: white;
+  border: 1px solid #004aad;
+  width: fit-content;
+}
+
+form {
+  max-width: 40%;
+}
+form h2 {
+  margin-bottom: 0;
+}
+form div {
+  display: flex;
+  flex-direction: column;
+}
+form label {
+  font-size: small;
+}
+form input {
+  margin-bottom: 1em;
+}
+
+header img {
+  max-height: 5em;
+}
+
+header {
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  background-color: white;
+}
+
+button {
+  background-color: #004aad;
+  color: white;
+}
+
+.hero-img {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+.hero-img img {
+  width: 50%;
+}
+
+h1 {
+  text-decoration: underline;
+}
