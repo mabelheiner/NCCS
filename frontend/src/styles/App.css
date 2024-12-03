@@ -1,11 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "PlayFairDisplay", "Merriweather", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  margin: 1em;
 }
 
 .display-none {
@@ -22,9 +31,8 @@ nav ul li {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
   cursor: pointer;
-  padding: 0em 1em;
+  padding: 0.5em;
 }
 nav ul li:hover {
   text-decoration: underline;
@@ -36,12 +44,22 @@ nav ul div {
 
 .dropdown-menu {
   position: absolute;
-  top: 100%;
+  top: 80%;
   left: 0;
   display: block;
   background-color: white;
   border: 1px solid #004aad;
-  width: fit-content;
+}
+.dropdown-menu li:hover {
+  background-color: lightgray;
+  text-decoration: none;
+}
+.dropdown-menu li.active {
+  background-color: lightgray;
+}
+
+nav .active {
+  text-decoration: underline;
 }
 
 form {
@@ -63,13 +81,16 @@ form input {
 
 header img {
   max-height: 5em;
+  margin: 1em;
+  border-radius: 10px;
 }
 
 header {
   align-items: center;
   position: sticky;
   top: 0px;
-  background-color: white;
+  background-color: lightblue;
+  margin-bottom: 1em;
 }
 
 button {
@@ -88,4 +109,31 @@ button {
 
 h1 {
   text-decoration: underline;
+}
+
+.nutrition-sites .who img {
+  height: 5em;
+  float: left;
+}
+.nutrition-sites .activities img {
+  height: 8em;
+  float: right;
+}
+.nutrition-sites .sites {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+}
+.nutrition-sites .sites .site {
+  padding: 0em 1em;
+  margin: 1em;
+  width: fit-content;
+}
+.nutrition-sites .sites .site h2 {
+  width: fit-content;
+  border-bottom: 2px solid #004aad;
+  margin: auto;
+}
+.nutrition-sites .sites .site a {
+  color: darkblue;
 }

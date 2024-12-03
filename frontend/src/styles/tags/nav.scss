@@ -12,9 +12,8 @@ nav ul {
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        padding: 0em 1em;       
+        cursor: pointer; 
+        padding: .5em;     
 
         &:hover{
             text-decoration: underline;
@@ -28,10 +27,25 @@ nav ul div {
 
 .dropdown-menu {
     position: absolute;
-    top: 100%;
+    top: 80%;
     left: 0;
     display: block;
     background-color: white;
     border: 1px solid vars.$dark-blue;
-    width: fit-content;
+
+    li {
+        &:hover {
+            background-color: lightgray;
+            text-decoration: none;
+        }
+
+        &.active {
+            background-color: lightgray;
+        }
+    }
 }
+
+nav .active {
+    text-decoration: underline;
+}
+

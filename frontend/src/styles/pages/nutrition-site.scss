@@ -1,0 +1,39 @@
+@use '../variable.scss' as vars;
+
+.nutrition-sites {
+    .who {
+        img {
+            height: 5em;
+            float: left;
+        }
+    }
+
+    .activities img {
+        height: 8em;
+        float: right;
+    }
+        .sites {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 0;
+
+            .site {
+                padding: 0em 1em;
+                margin: 1em;
+                width: fit-content;
+                
+                h2 {
+                    width: fit-content;
+                    border-bottom: 2px solid vars.$dark-blue;
+                    margin: auto;
+                }
+
+                &.site-underline {
+                    
+                }
+                a {
+                    color: darkblue;
+            }
+        }
+    }        
+}

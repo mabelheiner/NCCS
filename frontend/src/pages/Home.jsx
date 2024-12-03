@@ -5,7 +5,6 @@ import Header from '../components/Header'
 const Home = () => {
   return (
     <div>
-        <Header />
         <section className='hero-img'>
           <img src="/src/assets/images/newton-county-community-services-logo.png" alt="" />
         </section>

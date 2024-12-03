@@ -7,7 +7,6 @@ const FoodPantry = () => {
   document.title = "NCCS | Food Pantry";
   return (
     <div>
-        <Header />
         <h1>Food Pantry</h1>
     </div>
   )

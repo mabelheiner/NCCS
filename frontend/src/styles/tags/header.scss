@@ -1,11 +1,14 @@
 //styles within the <header> tag
 header img {
     max-height: 5em;
+    margin: 1em;
+    border-radius: 10px;
 }
 
 header {
     align-items: center;
     position: sticky;
     top: 0px;
-    background-color: white;
+    background-color: lightblue;
+    margin-bottom: 1em;
 }
